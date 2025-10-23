@@ -27,7 +27,7 @@ class ProxyManager
      * @param $container   Container that holds the actual instances
      * @param $aliasLoader Alias Loader object that stores and resolves
      */
-    public function __construct(ContainerInterface $container, AliasLoaderInterface $aliasLoader = null)
+    public function __construct(ContainerInterface $container, ?AliasLoaderInterface $aliasLoader = null)
     {
         $this->container = $container;
         $this->aliasLoader = $aliasLoader ?: new AliasLoader();
